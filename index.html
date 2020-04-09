@@ -4,55 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Notes-App</title>
-    <style>
-      body {
-        background-color: black;
-      }
-      .wrapper .bottom {
-        display: grid;
-        grid-template-columns: 50px 50px 2fr;
-        grid-gap: 1px;
-      }
-      .wrapper > div {
-        border: 5px solid #333;
-        color: white;
-      }
-
-      .bottom {
-        grid-auto-rows: minmax(100vh, auto);
-      }
-      .bottom > div {
-        border: 5px solid #333;
-        color: white;
-      }
-
-      .top {
-        grid-column: 1/4;
-        text-align: center;
-      }
-
-      .menu {
-        grid-column: 1/2;
-        height: minmax(100vh, auto);
-      }
-
-      .menu-item {
-        overflow-wrap: break-word;
-      }
-
-      .left {
-        grid-column: 2/3;
-      }
-      .notes {
-        display: grid;
-        grid-gap: 2px;
-        grid-row: minmax(100px, auto);
-      }
-
-      .notes > div {
-        border: 1px solid white;
-      }
-    </style>
+    <link rel="stylesheet" href="styling.css" />
   </head>
   <body>
     <div class="wrapper">
@@ -60,16 +12,6 @@
       <div class="bottom">
         <div class="box menu">
           <div class="menu-item">
-            <p class="menu-item">Menu-item</p>
-            <p class="menu-item">Menu-item</p>
-            <p class="menu-item">Menu-item</p>
-            <p class="menu-item">Menu-item</p>
-            <p class="menu-item">Menu-item</p>
-            <p class="menu-item">Menu-item</p>
-            <p class="menu-item">Menu-item</p>
-            <p class="menu-item">Menu-item</p>
-            <p class="menu-item">Menu-item</p>
-            <p class="menu-item">Menu-item</p>
             <p class="menu-item">Menu-item</p>
             <p class="menu-item">Menu-item</p>
             <p class="menu-item">Menu-item</p>
