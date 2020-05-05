@@ -3,7 +3,7 @@ body {
 }
 .wrapper .bottom {
   display: grid;
-  grid-template-columns: 50px 50px 2fr;
+  grid-template-columns: 50px 50px 1fr;
   grid-gap: 1px;
 }
 .wrapper > div {
@@ -26,7 +26,6 @@ body {
 
 .menu {
   grid-column: 1/2;
-  height: minmax(100vh, auto);
 }
 
 .menu-item {
@@ -35,13 +34,54 @@ body {
 
 .left {
   grid-column: 2/3;
+  overflow-wrap: break-word;
 }
-.notes {
+.box {
   display: grid;
-  grid-gap: 2px;
-  grid-row: minmax(100px, auto);
+  grid-gap: 5px;
+  grid-template-rows: 2.8em 1fr;
 }
 
-.notes > div {
-  border: 1px solid white;
+.tabs {
+  height: 2.8em;
+  display: flex;
+  flex: 0 0 2.8em;
+  overflow-y: hidden;
+  overflow-x: auto;
+  background: black;
+  color: black;
+  scrollbar-width: thin;
+  scrollbar-color: salmon black;
+}
+
+.tab-boxes {
+  background: rgb(171, 225, 235);
+  flex: 0 0 100px;
+  height: 3em;
+  margin-left: 1px;
+  margin-right: 1px;
+  text-align: center;
+  padding: 3px;
+  line-height: 2.8em;
+}
+
+.text-over {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.notes {
+  background: white;
+  color: black;
+  max-height: 100vh;
+  overflow-x: auto;
+  word-break: break-all;
+  text-align: justify;
+  scrollbar-width: thin;
+  scrollbar-color: salmon rgb(171, 225, 235);
+}
+
+.notes p {
+  padding: 20px;
 }

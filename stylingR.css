@@ -1,0 +1,88 @@
+body {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  background-color: pink;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+}
+
+#top {
+  padding: 0;
+  flex: 0 0 50px;
+  margin: 0;
+  background-color: yellow;
+}
+
+#mid {
+  padding: 0;
+  height: 100px;
+  flex: auto;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+#menu {
+  margin: 0;
+  flex: 0 0 50px;
+  background-color: green;
+}
+
+#text {
+  width: 0px;
+  margin: 0;
+  flex: auto;
+  background-color: blue;
+  display: flex;
+  flex-direction: column;
+}
+
+#tabs {
+  flex: 0 0 2em;
+  overflow-x: auto;
+  overflow-y: hidden;
+  display: flex;
+  flex-direction: row;
+  scrollbar-width: thin;
+  scrollbar-color: black gray;
+  padding: 0;
+  background-color: gray;
+}
+
+#words {
+  width: 0px;
+  flex: auto;
+  overflow-x: auto;
+  word-break: break-all;
+  hyphens: auto;
+  text-align: justify;
+}
+
+#left {
+  margin: 0;
+  flex: 0 0 100px;
+  background-color: black;
+}
+
+#bottom {
+  padding: 0;
+  flex: 0 0 20px;
+  margin: 0;
+  background-color: red;
+}
+
+.tab {
+  margin-left: 1px;
+  margin-right: 1px;
+  height: 1.9em;
+  flex: 0 0 50px;
+  line-height: 1em;
+  text-align: center;
+  background-color: pink;
+  overflow: hidden;
+  padding-top: 2px;
+  /* white-space: nowrap; */
+  text-overflow: ellipsis;
+}
